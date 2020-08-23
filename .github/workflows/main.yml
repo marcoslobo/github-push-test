@@ -7,8 +7,10 @@ jobs:
     steps:
     - name: checking prs
       id: check-pr
-      uses: marcoslobo/actions-sme-check@v2
+      uses: marcoslobo/Actions.PRCheck@v1
+      with:
+        branch-from: 'release'
     # Use the output from the `hello` step
     - name: Get the output 
-      run: echo "result ${{ steps.check-pr.outputs.sucesso }}"      
+      run: echo "result ${{ steps.check-pr }}"      
       
