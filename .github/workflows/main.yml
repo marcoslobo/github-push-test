@@ -7,5 +7,7 @@ jobs:
     steps:
     - name: checking prs
       id: check-pr
-      uses: marcoslobo/Actions.PRCheck@v5.0.8      
+      uses: marcoslobo/Actions.PRCheck@v5.0.9    
+    env: 
+      branch-ref: $github.head_ref 
       
