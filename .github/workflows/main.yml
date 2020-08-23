@@ -11,7 +11,7 @@ jobs:
       id: check-pr
       uses: marcoslobo/Actions.PRCheck@v5.0.23   
       with:
-        branch: 2
+        branch: 3
     env: 
       branch_ref: ${{ github.head_ref }}
       
