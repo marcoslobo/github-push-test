@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: checking prs
       id: check-pr
-      uses: marcoslobo/Actions.PRCheck@v3
+      uses: marcoslobo/Actions.PRCheck@v4
       with:
         branch-from: 'release'
     # Use the output from the `hello` step
