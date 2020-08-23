@@ -9,9 +9,12 @@ jobs:
     steps:
     - name: checking prs
       id: check-pr
-      uses: marcoslobo/Actions.PRCheck@v5.0.23   
-      with:
-        branch: 2
-    env: 
-      branch_ref: ${{ github.head_ref }}
+      uses: marcoslobo/Actions.PRCheck@v5.0.23
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: |
+        echo "$GITHUB_CONTEXT"
+        echo ${{ github.event.pull_request.title }}    
+    
       
