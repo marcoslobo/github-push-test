@@ -12,5 +12,5 @@ jobs:
         branch-from: 'release'
     # Use the output from the `hello` step
     - name: Get the output 
-      run: echo "result ${{ steps.message }}"      
+      run: echo "result ${{ steps.check-pr.message }}"      
       
