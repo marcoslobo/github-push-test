@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: checking prs
       id: check-pr
-      uses: marcoslobo/Actions.PRCheck@v5.0.16   
+      uses: marcoslobo/Actions.PRCheck@v5.0.17   
       with:
         branch: 2
     env: 
