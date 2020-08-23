@@ -3,7 +3,7 @@ on:
     branches:
       - master
 jobs:
-  hello_world_job:
+  check-pull-requests:
     runs-on: ubuntu-latest
     name: checking pull request flow
     steps:
