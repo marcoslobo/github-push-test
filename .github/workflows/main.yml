@@ -1,7 +1,9 @@
 on: 
   pull_request:
+    types: [edited, opened, synchronize, reopened]
     branches:
       - master
+      
 jobs:
   check-pull-requests:
     runs-on: ubuntu-latest
