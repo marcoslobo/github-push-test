@@ -9,7 +9,7 @@ jobs:
     steps:   
       - name: checking prs
         id: check-pr
-        uses: marcoslobo/Actions.PRCheck@v5.0.28
+        uses: marcoslobo/Actions.PRCheck@v5.0.29
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
    
