@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: checking pull request flow
     steps:   
-    - name: Dump GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: |
-        echo "$GITHUB_CONTEXT"
-        echo ${{ github.event.pull_request.title }}    
+      - name: checking prs
+        id: check-pr
+        uses: marcoslobo/Actions.PRCheck@v5.0.25
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+   
     
       
