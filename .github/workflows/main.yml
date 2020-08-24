@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: checking pull request flow
     steps:   
-      - name: checking prs
+      - name: checking prs 1
         id: check-pr
         uses: marcoslobo/Actions.PRCheck@v5.0.25
         env:
