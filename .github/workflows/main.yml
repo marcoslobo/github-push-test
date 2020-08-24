@@ -5,7 +5,7 @@ on:
 jobs:
   check-pull-requests:
     runs-on: ubuntu-latest
-    name: checking pull request flow
+    name: checking pull request flow 1
     steps:   
       - name: checking prs
         id: check-pr
